@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солнечная система</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="theme-color" content="#1f2a44">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon-192.png">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1>Солнечная система</h1>
+        <nav>
+            <a href="#about">О системе</a>
+            <a href="#planets">Планеты</a>
+            <a href="#links">Ссылки</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="intro" id="about">
+        <div class="container">
+            <h2>Что такое Солнечная система?</h2>
+            <p>
+                Солнечная система состоит из Солнца, восьми планет,
+                их спутников, астероидов и комет. Все планеты движутся
+                вокруг Солнца по своим орбитам.
+            </p>
+        </div>
+    </section>
+
+    <section class="planets" id="planets">
+        <div class="container">
+            <h2>Некоторые планеты</h2>
+
+            <div class="card">
+                <img src="images/earth.png" alt="Земля">
+                <div>
+                    <h3>Земля</h3>
+                    <p>
+                        Земля — третья планета от Солнца. На ней есть вода,
+                        атмосфера и условия для жизни.
+                    </p>
+                    <a href="https://science.nasa.gov/earth/" target="_blank">
+                        Подробнее о Земле
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/mars.png" alt="Марс">
+                <div>
+                    <h3>Марс</h3>
+                    <p>
+                        Марс — четвёртая планета от Солнца.
+                        Из-за цвета поверхности его называют Красной планетой.
+                    </p>
+                    <a href="https://science.nasa.gov/mars/" target="_blank">
+                        Подробнее о Марсе
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="images/jupiter.png" alt="Юпитер">
+                <div>
+                    <h3>Юпитер</h3>
+                    <p>
+                        Юпитер — самая большая планета Солнечной системы.
+                        Он относится к газовым гигантам.
+                    </p>
+                    <a href="https://science.nasa.gov/jupiter/" target="_blank">
+                        Подробнее о Юпитере
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="links" id="links">
+        <div class="container">
+            <h2>Полезные ссылки</h2>
+            <ul>
+                <li>
+                    <a href="https://science.nasa.gov/solar-system/" target="_blank">
+                        Солнечная система на сайте NASA
+                    </a>
+                </li>
+                <li>
+                    <a href="https://science.nasa.gov/solar-system/planets/" target="_blank">
+                        Список планет на сайте NASA
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Выполнил: Маглыш Андрей, группа АИ-25-02</p>
+    </div>
+</footer>
+
+
+<script>
+    if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("./serviceworker.js");
+        });
+    }
+</script>
+
+</body>
+</html>
